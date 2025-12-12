@@ -1,13 +1,12 @@
 import { Leaf, Wind, Flame, Shield, Sparkles } from 'lucide-react';
-import Footer from '../components/Footer';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#F7F5F3]">
       <div className="max-w-6xl mx-auto px-6 py-24">
-        <section className="mb-24 grid md:grid-cols-2 gap-12 items-center">
+        <section className="mb-24 grid md:grid-cols-2 gap-12 items-center pt-12">
           <div>
-            <h1 className="text-5xl font-light text-stone-800 mb-4 tracking-tight">
+            <h1 className="text-6xl font-light text-stone-800 mb-4 tracking-tight">
               What Is Clean Incense?
             </h1>
             <p className="text-xl text-stone-600 font-light leading-relaxed">
@@ -17,21 +16,21 @@ export default function Home() {
           <div>
             <img
               src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=1000"
-              alt="Natural botanical atmosphere"
-              className="rounded-sm shadow-lg w-full object-cover h-[400px]"
+              alt="Botanical atmosphere"
+              className="w-full h-[500px] object-cover rounded-sm shadow-xl"
             />
           </div>
         </section>
 
-        <section className="mb-20 bg-white p-10 rounded-sm shadow-sm border border-stone-200 grid md:grid-cols-2 gap-12 items-center">
-          <div className="order-2 md:order-1">
+        <section className="mb-20 grid md:grid-cols-2 gap-12 items-center">
+          <div>
             <img
               src="https://images.unsplash.com/photo-1615485925694-a039755d143c?auto=format&fit=crop&q=80&w=1000"
-              alt="Raw botanical resins"
-              className="rounded-sm shadow-lg w-full object-cover h-[400px]"
+              alt="Resins"
+              className="w-full h-[400px] object-cover rounded-sm shadow-lg"
             />
           </div>
-          <div className="order-1 md:order-2">
+          <div>
             <h2 className="text-2xl font-light text-stone-800 mb-6">The Definition</h2>
             <p className="text-lg text-stone-700 leading-relaxed mb-4">
               Clean incense is a botanical scenting method that uses natural plant materials—resins, woods, and herbs—without combustion, synthetic fragrances, or harmful additives. Instead of burning, clean incense is gently warmed to release pure aromatic compounds without smoke or particulate matter.
@@ -47,7 +46,7 @@ export default function Home() {
             Why Traditional Incense Isn't Always Clean
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white p-8 rounded-sm border border-stone-200">
+            <div className="bg-white p-8 rounded-sm border border-stone-200 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
               <Flame className="w-8 h-8 text-stone-400 mb-4" />
               <h3 className="text-lg font-medium text-stone-800 mb-3">Combustion Creates Particulates</h3>
               <p className="text-stone-600 leading-relaxed">
@@ -55,7 +54,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-sm border border-stone-200">
+            <div className="bg-white p-8 rounded-sm border border-stone-200 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
               <Wind className="w-8 h-8 text-stone-400 mb-4" />
               <h3 className="text-lg font-medium text-stone-800 mb-3">Artificial Fragrance Oils</h3>
               <p className="text-stone-600 leading-relaxed">
@@ -63,7 +62,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-sm border border-stone-200">
+            <div className="bg-white p-8 rounded-sm border border-stone-200 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
               <Shield className="w-8 h-8 text-stone-400 mb-4" />
               <h3 className="text-lg font-medium text-stone-800 mb-3">Charcoal & Accelerants</h3>
               <p className="text-stone-600 leading-relaxed">
@@ -71,7 +70,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-sm border border-stone-200">
+            <div className="bg-white p-8 rounded-sm border border-stone-200 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
               <Leaf className="w-8 h-8 text-stone-400 mb-4" />
               <h3 className="text-lg font-medium text-stone-800 mb-3">Unclear Sourcing</h3>
               <p className="text-stone-600 leading-relaxed">
@@ -286,7 +285,6 @@ export default function Home() {
         </section>
 
       </div>
-      <Footer />
     </div>
   );
 }
