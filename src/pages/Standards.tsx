@@ -1,5 +1,4 @@
 import { Leaf, Flame, Droplet, Eye, Thermometer } from 'lucide-react';
-import Footer from '../components/Footer';
 
 export default function Standards() {
   return (
@@ -22,8 +21,8 @@ export default function Standards() {
           <div>
             <img
               src="https://images.unsplash.com/photo-1470114716159-2709038260a5?auto=format&fit=crop&q=80&w=1000"
-              alt="Pristine nature"
-              className="rounded-sm shadow-lg w-full object-cover h-[500px]"
+              alt="Nature"
+              className="w-full h-[400px] object-cover rounded-sm shadow-lg"
             />
           </div>
         </section>
@@ -34,7 +33,7 @@ export default function Standards() {
           </h2>
 
           <div className="space-y-8">
-            <div className="bg-white p-10 rounded-sm border border-stone-200">
+            <div className="bg-white p-10 rounded-sm border border-stone-200 hover:bg-stone-50 transition-colors duration-300">
               <div className="flex gap-6 mb-6">
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 rounded-full bg-stone-100 flex items-center justify-center">
@@ -53,7 +52,7 @@ export default function Standards() {
               </div>
             </div>
 
-            <div className="bg-white p-10 rounded-sm border border-stone-200">
+            <div className="bg-white p-10 rounded-sm border border-stone-200 hover:bg-stone-50 transition-colors duration-300">
               <div className="flex gap-6 mb-6">
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 rounded-full bg-stone-100 flex items-center justify-center">
@@ -72,7 +71,7 @@ export default function Standards() {
               </div>
             </div>
 
-            <div className="bg-white p-10 rounded-sm border border-stone-200">
+            <div className="bg-white p-10 rounded-sm border border-stone-200 hover:bg-stone-50 transition-colors duration-300">
               <div className="flex gap-6 mb-6">
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 rounded-full bg-stone-100 flex items-center justify-center">
@@ -91,7 +90,7 @@ export default function Standards() {
               </div>
             </div>
 
-            <div className="bg-white p-10 rounded-sm border border-stone-200">
+            <div className="bg-white p-10 rounded-sm border border-stone-200 hover:bg-stone-50 transition-colors duration-300">
               <div className="flex gap-6 mb-6">
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 rounded-full bg-stone-100 flex items-center justify-center">
@@ -110,7 +109,7 @@ export default function Standards() {
               </div>
             </div>
 
-            <div className="bg-white p-10 rounded-sm border border-stone-200">
+            <div className="bg-white p-10 rounded-sm border border-stone-200 hover:bg-stone-50 transition-colors duration-300">
               <div className="flex gap-6 mb-6">
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 rounded-full bg-stone-100 flex items-center justify-center">
@@ -217,7 +216,6 @@ export default function Standards() {
           </div>
         </section>
       </div>
-      <Footer />
     </div>
   );
 }
