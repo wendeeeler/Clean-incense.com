@@ -3,7 +3,7 @@ import { Flame, Wind, Heart, Home, Lightbulb, CircleDot } from 'lucide-react';
 export default function WarmingVsBurning() {
   return (
     <div className="min-h-screen bg-[#F7F5F3]">
-      <div className="max-w-4xl mx-auto px-6 py-24">
+      <div className="max-w-6xl mx-auto px-6 py-24">
         <section className="mb-20">
           <h1 className="text-5xl font-light text-stone-800 mb-4 tracking-tight">
             Incense Warming vs Burning
@@ -72,45 +72,56 @@ export default function WarmingVsBurning() {
             How Incense Warming Works
           </h2>
           <div className="bg-white p-10 rounded-sm border border-stone-200">
-            <div className="flex gap-6 mb-8">
-              <Wind className="w-12 h-12 text-stone-400 flex-shrink-0" />
+            <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <p className="text-lg text-stone-700 leading-relaxed mb-4">
-                  Incense warming uses gentle, indirect heat to volatilize aromatic compounds without combustion. Botanicals are placed in a ceramic holder positioned above a low heat source—typically a tealight candle or electric warmer. The temperature remains well below ignition point, generally between 50-150°C (122-302°F).
-                </p>
-                <p className="text-lg text-stone-700 leading-relaxed">
-                  At these lower temperatures, the essential oils, resins, and aromatic compounds naturally present in the botanicals evaporate and diffuse into the air. The plant material doesn't burn; it simply releases its volatile components through gentle heating, much like essential oil diffusion.
-                </p>
-              </div>
-            </div>
+                <div className="flex gap-6 mb-8">
+                  <Wind className="w-12 h-12 text-stone-400 flex-shrink-0" />
+                  <div>
+                    <p className="text-lg text-stone-700 leading-relaxed mb-4">
+                      Incense warming uses gentle, indirect heat to volatilize aromatic compounds without combustion. Botanicals are placed in a ceramic holder positioned above a low heat source—typically a tealight candle or electric warmer. The temperature remains well below ignition point, generally between 50-150°C (122-302°F).
+                    </p>
+                    <p className="text-lg text-stone-700 leading-relaxed">
+                      At these lower temperatures, the essential oils, resins, and aromatic compounds naturally present in the botanicals evaporate and diffuse into the air. The plant material doesn't burn; it simply releases its volatile components through gentle heating, much like essential oil diffusion.
+                    </p>
+                  </div>
+                </div>
 
-            <div className="border-t border-stone-200 pt-8">
-              <h3 className="text-xl font-light text-stone-800 mb-6">The Warming Process</h3>
-              <div className="space-y-6">
-                <div className="flex gap-4">
-                  <CircleDot className="w-6 h-6 text-stone-400 flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="text-stone-700 mb-2"><span className="font-medium">Step 1:</span> A small amount of botanical material (resin, wood chips, or herbal blend) is placed in a heat-safe ceramic dish</p>
+                <div className="border-t border-stone-200 pt-8">
+                  <h3 className="text-xl font-light text-stone-800 mb-6">The Warming Process</h3>
+                  <div className="space-y-6">
+                    <div className="flex gap-4">
+                      <CircleDot className="w-6 h-6 text-stone-400 flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="text-stone-700 mb-2"><span className="font-medium">Step 1:</span> A small amount of botanical material (resin, wood chips, or herbal blend) is placed in a heat-safe ceramic dish</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-4">
+                      <CircleDot className="w-6 h-6 text-stone-400 flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="text-stone-700 mb-2"><span className="font-medium">Step 2:</span> A tealight candle or electric heat source is positioned beneath the dish, providing consistent low-level warmth</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-4">
+                      <CircleDot className="w-6 h-6 text-stone-400 flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="text-stone-700 mb-2"><span className="font-medium">Step 3:</span> As the botanicals warm, their aromatic molecules volatilize and rise naturally into the surrounding air</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-4">
+                      <CircleDot className="w-6 h-6 text-stone-400 flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="text-stone-700 mb-2"><span className="font-medium">Step 4:</span> The space gradually fills with pure botanical aroma—no smoke, no combustion byproducts</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="flex gap-4">
-                  <CircleDot className="w-6 h-6 text-stone-400 flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="text-stone-700 mb-2"><span className="font-medium">Step 2:</span> A tealight candle or electric heat source is positioned beneath the dish, providing consistent low-level warmth</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <CircleDot className="w-6 h-6 text-stone-400 flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="text-stone-700 mb-2"><span className="font-medium">Step 3:</span> As the botanicals warm, their aromatic molecules volatilize and rise naturally into the surrounding air</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <CircleDot className="w-6 h-6 text-stone-400 flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="text-stone-700 mb-2"><span className="font-medium">Step 4:</span> The space gradually fills with pure botanical aroma—no smoke, no combustion byproducts</p>
-                  </div>
-                </div>
+              </div>
+              <div className="flex items-center">
+                <img
+                  src="https://images.unsplash.com/photo-1602523961358-f9f03dd557db?auto=format&fit=crop&q=80&w=1000"
+                  alt="Ceramic aesthetics"
+                  className="rounded-sm w-full object-cover h-full min-h-[300px]"
+                />
               </div>
             </div>
           </div>

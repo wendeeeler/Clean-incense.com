@@ -3,25 +3,31 @@ import { Leaf, Flame, Droplet, Eye, Thermometer } from 'lucide-react';
 export default function Standards() {
   return (
     <div className="min-h-screen bg-[#F7F5F3]">
-      <div className="max-w-4xl mx-auto px-6 py-24">
-        <section className="mb-20">
-          <h1 className="text-5xl font-light text-stone-800 mb-4 tracking-tight">
-            The Clean Incense Standards
-          </h1>
-          <p className="text-xl text-stone-600 font-light leading-relaxed">
-            A framework for safe, natural, and mindful scenting.
-          </p>
-        </section>
-
-        <section className="mb-16">
-          <div className="bg-white p-10 rounded-sm border border-stone-200 mb-8">
-            <p className="text-lg text-stone-700 leading-relaxed">
-              These five principles define what makes incense "clean"—a standard developed to honor ancient botanical traditions while addressing modern health and environmental considerations. When incense meets all five criteria, it represents the highest standard of natural, safe scenting.
+      <div className="max-w-6xl mx-auto px-6 py-24">
+        <section className="mb-20 grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <h1 className="text-5xl font-light text-stone-800 mb-4 tracking-tight">
+              The Clean Incense Standards
+            </h1>
+            <p className="text-xl text-stone-600 font-light leading-relaxed mb-8">
+              A framework for safe, natural, and mindful scenting.
             </p>
+            <div className="bg-white p-8 rounded-sm border border-stone-200">
+              <p className="text-lg text-stone-700 leading-relaxed">
+                These five principles define what makes incense "clean"—a standard developed to honor ancient botanical traditions while addressing modern health and environmental considerations. When incense meets all five criteria, it represents the highest standard of natural, safe scenting.
+              </p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1470114716159-2709038260a5?auto=format&fit=crop&q=80&w=1000"
+              alt="Pristine nature"
+              className="rounded-sm shadow-lg w-full object-cover h-[500px]"
+            />
           </div>
         </section>
 
-        <section className="mb-20">
+        <section className="mb-24">
           <h2 className="text-3xl font-light text-stone-800 mb-10">
             The Five Clean Incense Principles
           </h2>

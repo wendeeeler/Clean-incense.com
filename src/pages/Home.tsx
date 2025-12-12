@@ -3,24 +3,42 @@ import { Leaf, Wind, Flame, Shield, Sparkles } from 'lucide-react';
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#F7F5F3]">
-      <div className="max-w-4xl mx-auto px-6 py-24">
-        <section className="mb-24">
-          <h1 className="text-5xl font-light text-stone-800 mb-4 tracking-tight">
-            What Is Clean Incense?
-          </h1>
-          <p className="text-xl text-stone-600 font-light leading-relaxed">
-            A guide to natural botanicals, safe scenting, and incense without the smoke.
-          </p>
+      <div className="max-w-6xl mx-auto px-6 py-24">
+        <section className="mb-24 grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 className="text-5xl font-light text-stone-800 mb-4 tracking-tight">
+              What Is Clean Incense?
+            </h1>
+            <p className="text-xl text-stone-600 font-light leading-relaxed">
+              A guide to natural botanicals, safe scenting, and incense without the smoke.
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=1000"
+              alt="Natural botanical atmosphere"
+              className="rounded-sm shadow-lg w-full object-cover h-[400px]"
+            />
+          </div>
         </section>
 
-        <section className="mb-20 bg-white p-10 rounded-sm shadow-sm border border-stone-200">
-          <h2 className="text-2xl font-light text-stone-800 mb-6">The Definition</h2>
-          <p className="text-lg text-stone-700 leading-relaxed mb-4">
-            Clean incense is a botanical scenting method that uses natural plant materials—resins, woods, and herbs—without combustion, synthetic fragrances, or harmful additives. Instead of burning, clean incense is gently warmed to release pure aromatic compounds without smoke or particulate matter.
-          </p>
-          <p className="text-lg text-stone-700 leading-relaxed">
-            This approach honors ancient scenting traditions while addressing modern concerns about indoor air quality and environmental health.
-          </p>
+        <section className="mb-20 bg-white p-10 rounded-sm shadow-sm border border-stone-200 grid md:grid-cols-2 gap-12 items-center">
+          <div className="order-2 md:order-1">
+            <img
+              src="https://images.unsplash.com/photo-1615485925694-a039755d143c?auto=format&fit=crop&q=80&w=1000"
+              alt="Raw botanical resins"
+              className="rounded-sm shadow-lg w-full object-cover h-[400px]"
+            />
+          </div>
+          <div className="order-1 md:order-2">
+            <h2 className="text-2xl font-light text-stone-800 mb-6">The Definition</h2>
+            <p className="text-lg text-stone-700 leading-relaxed mb-4">
+              Clean incense is a botanical scenting method that uses natural plant materials—resins, woods, and herbs—without combustion, synthetic fragrances, or harmful additives. Instead of burning, clean incense is gently warmed to release pure aromatic compounds without smoke or particulate matter.
+            </p>
+            <p className="text-lg text-stone-700 leading-relaxed">
+              This approach honors ancient scenting traditions while addressing modern concerns about indoor air quality and environmental health.
+            </p>
+          </div>
         </section>
 
         <section className="mb-20">
