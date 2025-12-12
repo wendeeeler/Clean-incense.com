@@ -1,5 +1,4 @@
 import { Flame, Wind, Heart, Home, Lightbulb, CircleDot } from 'lucide-react';
-import Footer from '../components/Footer';
 
 export default function WarmingVsBurning() {
   return (
@@ -73,7 +72,7 @@ export default function WarmingVsBurning() {
             How Incense Warming Works
           </h2>
           <div className="bg-white p-10 rounded-sm border border-stone-200">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-12">
               <div>
                 <div className="flex gap-6 mb-8">
                   <Wind className="w-12 h-12 text-stone-400 flex-shrink-0" />
@@ -120,8 +119,8 @@ export default function WarmingVsBurning() {
               <div className="flex items-center">
                 <img
                   src="https://images.unsplash.com/photo-1602523961358-f9f03dd557db?auto=format&fit=crop&q=80&w=1000"
-                  alt="Ceramic aesthetics"
-                  className="rounded-sm w-full object-cover h-full min-h-[300px]"
+                  alt="Ceramic warmer"
+                  className="w-full h-full object-cover rounded-sm"
                 />
               </div>
             </div>
@@ -164,6 +163,60 @@ export default function WarmingVsBurning() {
                 The aromatic vapor from warming disperses evenly through the space without the visual haze or particulate load of smoke. Your indoor air quality remains clear while the room fills with pure botanical fragrance.
               </p>
             </div>
+          </div>
+        </section>
+
+        <section className="mb-20">
+          <h2 className="text-3xl font-light text-stone-800 mb-8">
+            Direct Comparison
+          </h2>
+          <div className="bg-white rounded-sm border border-stone-200 overflow-hidden shadow-lg">
+            <table className="w-full">
+              <thead>
+                <tr className="bg-stone-100 uppercase tracking-widest text-xs">
+                  <th className="text-left p-6 font-medium text-stone-700">Aspect</th>
+                  <th className="text-left p-6 font-medium text-stone-700">Burning</th>
+                  <th className="text-left p-6 font-medium text-stone-700">Warming</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-stone-100">
+                <tr>
+                  <td className="p-6 font-medium text-stone-800">Temperature</td>
+                  <td className="p-6 text-stone-600">600°C+ (1,112°F+)</td>
+                  <td className="p-6 text-stone-600">50-150°C (122-302°F)</td>
+                </tr>
+                <tr>
+                  <td className="p-6 font-medium text-stone-800">Smoke Production</td>
+                  <td className="p-6 text-stone-600">Yes, with particulate matter</td>
+                  <td className="p-6 text-stone-600">None</td>
+                </tr>
+                <tr>
+                  <td className="p-6 font-medium text-stone-800">Aroma Quality</td>
+                  <td className="p-6 text-stone-600">Altered by combustion, mixed with smoke</td>
+                  <td className="p-6 text-stone-600">Pure botanical fragrance preserved</td>
+                </tr>
+                <tr>
+                  <td className="p-6 font-medium text-stone-800">Air Quality Impact</td>
+                  <td className="p-6 text-stone-600">PM2.5, VOCs, combustion byproducts</td>
+                  <td className="p-6 text-stone-600">Minimal, no combustion pollutants</td>
+                </tr>
+                <tr>
+                  <td className="p-6 font-medium text-stone-800">Residue</td>
+                  <td className="p-6 text-stone-600">Ash, soot, lingering odor</td>
+                  <td className="p-6 text-stone-600">None</td>
+                </tr>
+                <tr>
+                  <td className="p-6 font-medium text-stone-800">Duration</td>
+                  <td className="p-6 text-stone-600">Quick consumption of material</td>
+                  <td className="p-6 text-stone-600">Extended scent release</td>
+                </tr>
+                <tr>
+                  <td className="p-6 font-medium text-stone-800">Best For</td>
+                  <td className="p-6 text-stone-600">Outdoor ceremonies, well-ventilated spaces</td>
+                  <td className="p-6 text-stone-600">Indoor use, scent-sensitive individuals</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
 
@@ -217,9 +270,7 @@ export default function WarmingVsBurning() {
             </p>
           </div>
         </section>
-
       </div>
-      <Footer />
     </div>
   );
 }
