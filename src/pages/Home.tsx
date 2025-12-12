@@ -1,4 +1,5 @@
 import { Leaf, Wind, Flame, Shield, Sparkles } from 'lucide-react';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -284,22 +285,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mb-12">
-          <div className="bg-stone-100 p-10 rounded-sm border border-stone-200">
-            <p className="text-stone-600 leading-relaxed mb-6">
-              Clean-incense.com is maintained by <span className="font-medium text-stone-800">Soul Space</span>, a studio dedicated to creating clean botanical incense and ceramic warmers that honor traditional scenting rituals while prioritizing health and environmental consciousness.
-            </p>
-            <div className="flex gap-4">
-              <a
-                href="https://soul-space.com"
-                className="inline-block px-6 py-3 bg-stone-800 text-white text-sm tracking-wide rounded-sm hover:bg-stone-700 transition-colors"
-              >
-                Explore Clean Botanical Blends →
-              </a>
-            </div>
-          </div>
-        </section>
       </div>
+      <Footer />
     </div>
   );
 }

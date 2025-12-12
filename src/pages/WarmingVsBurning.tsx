@@ -1,4 +1,5 @@
 import { Flame, Wind, Heart, Home, Lightbulb, CircleDot } from 'lucide-react';
+import Footer from '../components/Footer';
 
 export default function WarmingVsBurning() {
   return (
@@ -217,20 +218,8 @@ export default function WarmingVsBurning() {
           </div>
         </section>
 
-        <section className="mb-12">
-          <div className="bg-white p-10 rounded-sm border border-stone-200">
-            <p className="text-stone-600 leading-relaxed mb-6">
-              Learn more about clean botanical incense and ceramic warmers at <span className="font-medium text-stone-800">Soul Space</span>, where ancient scenting traditions meet modern wellness consciousness.
-            </p>
-            <a
-              href="https://soul-space.com"
-              className="inline-block px-6 py-3 bg-stone-800 text-white text-sm tracking-wide rounded-sm hover:bg-stone-700 transition-colors"
-            >
-              Explore Soul Space →
-            </a>
-          </div>
-        </section>
       </div>
+      <Footer />
     </div>
   );
 }

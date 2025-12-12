@@ -1,4 +1,5 @@
 import { Leaf, Flame, Droplet, Eye, Thermometer } from 'lucide-react';
+import Footer from '../components/Footer';
 
 export default function Standards() {
   return (
@@ -216,6 +217,7 @@ export default function Standards() {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 }
